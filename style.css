@@ -1,0 +1,320 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+    /* background-color: #01354D; */
+    background-color: #003b65;
+    overflow: hidden;
+    
+}
+
+.salute{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.saluteTextContainer{
+    flex: 3;
+}
+
+.saluteImgContainer{
+    flex: 1;
+}
+
+.saluteText{
+    color: #ABBECC;
+    font-size: 40vw;
+    cursor: default;
+}
+
+.saluteImg{
+    width: 100%;
+}
+
+.nameContainer{
+    height: 100vh;
+    background-color: #003b65;
+}
+
+.name{
+    font-size: 18vw;
+    color: #ABBECC;
+    cursor: default;
+    text-align: center;
+    line-height: 100vh;
+    justify-content: center;
+    margin-left: -30px;
+}
+
+.jobTitleContainer{
+    height: 100vh;
+    background-color: #304562;
+}
+
+.dark{
+    background: url("./img/bgimgtech.jpg");
+}
+.purple{
+    background: url("./img/bgimgtech.jpg");
+}
+
+.jobTitle{
+    font-size: 10vw;
+    color: #ABBECC;
+    line-height: 100vh;
+    cursor: default;
+}
+
+.projects{
+    display: flex;
+    flex-direction: column;
+    gap: 30vh;
+    padding: 0px 100px;
+}
+
+.projectsTitle{
+    font-size: 10vw;
+    color: #ABBECC;
+}
+
+.project{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.project:nth-child(2n){
+    flex-direction: row-reverse;
+}
+
+.phone{
+    flex: 1;
+    width: 300px;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+}
+
+.phoneScreen{
+    width: 264px;
+    height: 567px;
+    position: absolute;
+    top: 17px;
+    left: 18px;
+    border-radius: 28px;
+    overflow: hidden;
+    overflow: scroll;
+}
+
+.phoneScreen::-webkit-scrollbar{
+    display: none;
+}
+
+.phoneApp{
+width: 100%;
+}
+
+.projectDetail{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+}
+
+.projectTitle{
+    font-size: 7vw;
+    color: #ABBECC;
+}
+
+.projectDesc{
+    font-size: 20px;
+    color: white;
+    text-align: justify;
+    line-height: 40px;
+}
+
+.projectButton{
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 2px solid #e9b92f;
+    color: #ABBECC;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.projectButton::after{
+    content: "View Demo";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    transition: 1s all;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e9b92f;
+    color: #003b65;
+}
+
+.projectButton:hover.projectButton::after{
+    transform: translateX(100%);
+}
+
+.laptop{
+    width: 600px;
+    height: 369px;
+    flex: 1;
+    position: relative;
+}
+
+.laptopScreen{
+    width: 451px;
+    height: 283px;
+    position: absolute;
+    top: 18px;
+    left: 68px;
+    /* overflow: scroll; */
+    overflow: hidden;
+}
+
+.laptopApp{
+    width: 100%;
+}
+
+.laptopScreen::-webkit-scrollbar{
+    display: none;
+}
+
+.githubContainer{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+}
+
+.githubTitle{
+    font-size: 100px;
+    color: #ABBECC;
+}
+
+.githubChart{
+    width: 820px;
+    text-align: center;
+    justify-items: center;
+}
+
+.dates{
+    padding: 10px;
+    color: #ABBECC;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.boxContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.box{
+    width: 15px;
+    height: 15px;
+    background-color: #171c25;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: 3s all ease;
+}
+
+.active:nth-child(4n){
+    background-color: #195b2c;
+}
+
+.githubChart:hover .active:nth-child(2n+1){
+    background-color: #195b2c;
+}
+
+.githubChart:hover .active:nth-child(2n){
+    /* background-color: #063f24; */
+    background-color: #065430;
+}
+
+.githubSm{
+    display: none;
+}
+
+.github{
+    background-color: #003b65;
+    height: 60px;
+    width: 50px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 10px 0px 10px;
+    border-radius: 50%;
+    }
+
+    .logo{
+        margin-top: 5px;
+    }
+
+    .align{
+        margin-left: 45%;
+        padding: 10px;
+        padding-top: 20px;
+    }
+
+/* @media screen and (max-width: 1024px){ */
+    @media (max-width: 1345px){
+
+    .projects{
+        padding: 0 30px;
+        text-align: center;
+    }
+
+    .project{
+        flex-direction: column;
+        height: max-content;
+    }
+
+    .project:nth-child(2n){
+        flex-direction: column;
+    }
+
+    .phone,.laptop{
+        transform: none !important;
+    }
+
+    .githubChart{
+        display: none;
+    }
+
+    .githubTitle{
+        text-align: center;
+        font-size: 10vw;
+    }
+
+    .githubSm{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        /* color: #555; */
+        color: #ABBECC;
+        font-size: 30px;
+        text-align: center;
+    }
+    
+}
